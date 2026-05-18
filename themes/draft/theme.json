@@ -1,0 +1,61 @@
+{
+  "name": "Draft",
+  "version": "1.0.0",
+  "author": "",
+  "description": "筆記感工作講義，標題 Sans-serif、內文 Serif 混搭，紙質暖調。",
+  "pageSize": "A4",
+  "tags": ["講義", "筆記", "現代"],
+  "palette": ["#2a2418", "#6b5c3e", "#b8a882", "#e0d8c8", "#faf8f2"],
+  "preview": "preview.png",
+  "blocks": [
+    {
+      "name": "重點框",
+      "key": "highlight",
+      "icon": "⭐",
+      "class": "block-highlight",
+      "children": [
+        { "type": "label", "placeholder": "重點" },
+        { "type": "paragraph", "placeholder": "說明文字…" }
+      ]
+    },
+    {
+      "name": "定義",
+      "key": "definition",
+      "icon": "📖",
+      "class": "block-definition",
+      "children": [
+        { "type": "label", "placeholder": "術語" },
+        { "type": "paragraph", "placeholder": "定義說明…" }
+      ]
+    },
+    {
+      "name": "例題",
+      "key": "example",
+      "icon": "✏️",
+      "class": "block-example",
+      "children": [
+        { "type": "label", "placeholder": "例題" },
+        { "type": "ol", "placeholder": "步驟…" }
+      ]
+    },
+    {
+      "name": "補充說明",
+      "key": "note",
+      "icon": "💡",
+      "class": "block-note",
+      "children": [
+        { "type": "paragraph", "placeholder": "補充說明…" }
+      ]
+    },
+    {
+      "name": "摘要",
+      "key": "summary",
+      "icon": "📋",
+      "class": "block-summary",
+      "children": [
+        { "type": "label", "placeholder": "摘要" },
+        { "type": "ol", "placeholder": "條列重點…" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Grove",
+  "version": "1.0.0",
+  "author": "",
+  "description": "知識工作者講義，低飽和墨綠色系，沉靜適合長閱讀。",
+  "pageSize": "A4",
+  "tags": ["講義", "現代", "Sans-serif", "筆記"],
+  "palette": ["#1e3028", "#3d6b4f", "#7aaa8c", "#c4d4c8", "#f2f5f2"],
+  "preview": "preview.png",
+  "blocks": [
+    {
+      "name": "重點框",
+      "key": "highlight",
+      "icon": "⭐",
+      "class": "block-highlight",
+      "children": [
+        { "type": "label", "placeholder": "重點" },
+        { "type": "paragraph", "placeholder": "說明文字…" }
+      ]
+    },
+    {
+      "name": "定義",
+      "key": "definition",
+      "icon": "📖",
+      "class": "block-definition",
+      "children": [
+        { "type": "label", "placeholder": "術語" },
+        { "type": "paragraph", "placeholder": "定義說明…" }
+      ]
+    },
+    {
+      "name": "例題",
+      "key": "example",
+      "icon": "✏️",
+      "class": "block-example",
+      "children": [
+        { "type": "label", "placeholder": "例題" },
+        { "type": "ol", "placeholder": "步驟…" }
+      ]
+    },
+    {
+      "name": "補充說明",
+      "key": "note",
+      "icon": "💡",
+      "class": "block-note",
+      "children": [
+        { "type": "paragraph", "placeholder": "補充說明…" }
+      ]
+    },
+    {
+      "name": "摘要",
+      "key": "summary",
+      "icon": "📋",
+      "class": "block-summary",
+      "children": [
+        { "type": "label", "placeholder": "摘要" },
+        { "type": "ol", "placeholder": "條列重點…" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-18",
+  "themes": [
+    {
+      "id": "linen",
+      "name": "Linen",
+      "description": "人文研討講義，暖米白質感，適合人文社科課程與工作坊。",
+      "pageSize": "A4",
+      "tags": ["講義", "人文", "Serif"],
+      "palette": ["#2c2420", "#a07850", "#c8b89a", "#ddd5c5", "#f7f3ec"],
+      "preview": "themes/linen/preview.png",
+      "download": "themes/linen/",
+      "version": "1.0.0",
+      "author": ""
+    },
+    {
+      "id": "folio",
+      "name": "Folio",
+      "description": "現代專業排版，低飽和藍灰色系，適合商業文件與工作坊講義。",
+      "pageSize": "A4",
+      "tags": ["講義", "現代", "Sans-serif", "商業"],
+      "palette": ["#1e2d42", "#3d6080", "#7aa0bc", "#c8d6e5", "#f0f3f7"],
+      "preview": "themes/folio/preview.png",
+      "download": "themes/folio/",
+      "version": "1.0.0",
+      "author": ""
+    },
+    {
+      "id": "grove",
+      "name": "Grove",
+      "description": "知識工作者講義，低飽和墨綠色系，沉靜適合長閱讀。",
+      "pageSize": "A4",
+      "tags": ["講義", "現代", "Sans-serif", "筆記"],
+      "palette": ["#1e3028", "#3d6b4f", "#7aaa8c", "#c4d4c8", "#f2f5f2"],
+      "preview": "themes/grove/preview.png",
+      "download": "themes/grove/",
+      "version": "1.0.0",
+      "author": ""
+    },
+    {
+      "id": "draft",
+      "name": "Draft",
+      "description": "筆記感工作講義，標題 Sans-serif、內文 Serif 混搭，紙質暖調。",
+      "pageSize": "A4",
+      "tags": ["講義", "筆記", "現代"],
+      "palette": ["#2a2418", "#6b5c3e", "#b8a882", "#e0d8c8", "#faf8f2"],
+      "preview": "themes/draft/preview.png",
+      "download": "themes/draft/",
+      "version": "1.0.0",
+      "author": ""
+    },
+    {
+      "id": "slate-deck",
+      "name": "Slate Deck",
+      "description": "理工學術簡報，黑白冷調，與 Slate 講義同一套系。",
+      "pageSize": "16:9",
+      "tags": ["簡報", "學術", "Serif"],
+      "palette": ["#1a1a1a", "#555555", "#aaaaaa", "#e0e0e0", "#ffffff"],
+      "preview": "themes/slate-deck/preview.png",
+      "download": "themes/slate-deck/",
+      "version": "1.0.0",
+      "author": ""
+    },
+    {
+      "id": "linen-deck",
+      "name": "Linen Deck",
+      "description": "人文研討簡報，暖米白質感，與 Linen 講義同一套系。",
+      "pageSize": "16:9",
+      "tags": ["簡報", "人文", "Serif"],
+      "palette": ["#2c2420", "#a07850", "#c8b89a", "#ddd5c5", "#f7f3ec"],
+      "preview": "themes/linen-deck/preview.png",
+      "download": "themes/linen-deck/",
+      "version": "1.0.0",
+      "author": ""
+    },
+    {
+      "id": "folio-deck",
+      "name": "Folio Deck",
+      "description": "現代專業簡報，低飽和藍灰色系，與 Folio 講義同一套系。",
+      "pageSize": "16:9",
+      "tags": ["簡報", "現代", "Sans-serif", "商業"],
+      "palette": ["#1e2d42", "#3d6080", "#7aa0bc", "#c8d6e5", "#f0f3f7"],
+      "preview": "themes/folio-deck/preview.png",
+      "download": "themes/folio-deck/",
+      "version": "1.0.0",
+      "author": ""
+    },
+    {
+      "id": "grove-deck",
+      "name": "Grove Deck",
+      "description": "知識工作者簡報，低飽和墨綠色系，與 Grove 講義同一套系。",
+      "pageSize": "16:9",
+      "tags": ["簡報", "現代", "Sans-serif", "筆記"],
+      "palette": ["#1e3028", "#3d6b4f", "#7aaa8c", "#c4d4c8", "#f2f5f2"],
+      "preview": "themes/grove-deck/preview.png",
+      "download": "themes/grove-deck/",
+      "version": "1.0.0",
+      "author": ""
+    },
+    {
+      "id": "draft-deck",
+      "name": "Draft Deck",
+      "description": "筆記感簡報，標題 Sans-serif、內文 Serif 混搭，紙質暖調，與 Draft 講義同一套系。",
+      "pageSize": "16:9",
+      "tags": ["簡報", "筆記", "現代"],
+      "palette": ["#2a2418", "#6b5c3e", "#b8a882", "#e0d8c8", "#faf8f2"],
+      "preview": "themes/draft-deck/preview.png",
+      "download": "themes/draft-deck/",
+      "version": "1.0.0",
+      "author": ""
+    }
+  ]
+}

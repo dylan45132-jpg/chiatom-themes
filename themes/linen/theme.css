@@ -1,0 +1,320 @@
+/* Linen — 人文研討講義，暖米白質感
+   pageSize: A4 */
+
+/* ─── 基礎頁面 ─────────────────────────────── */
+
+.page {
+  font-family: 'Georgia', 'Noto Serif TC', 'Times New Roman', serif;
+  font-size: 13px;
+  line-height: 1.9;
+  color: #2c2420;
+  background: #f7f3ec;
+  padding: 72px 80px;
+  box-sizing: border-box;
+}
+
+/* ─── 標題層級 ─────────────────────────────── */
+
+.page h1 {
+  font-family: 'Georgia', 'Noto Serif TC', serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.35;
+  color: #2c2420;
+  margin: 0 0 8px 0;
+  letter-spacing: 0;
+  /* 暖棕色底線，取代 Slate 的黑色粗線 */
+  padding-bottom: 10px;
+  border-bottom: 1px solid #c8b89a;
+}
+
+.page h2 {
+  font-family: 'Georgia', 'Noto Serif TC', serif;
+  font-size: 15.5px;
+  font-weight: bold;
+  line-height: 1.4;
+  color: #2c2420;
+  margin: 30px 0 6px 0;
+  /* accent 色左線，取代 Slate 的純文字 h2 */
+  padding-left: 10px;
+  border-left: 3px solid #a07850;
+}
+
+.page h3 {
+  font-family: 'Georgia', 'Noto Serif TC', serif;
+  font-size: 13px;
+  font-weight: normal;
+  font-style: italic;
+  line-height: 1.5;
+  color: #a07850;
+  margin: 20px 0 4px 0;
+}
+
+.page h1 + h2 {
+  margin-top: 22px;
+}
+
+/* ─── 段落 ─────────────────────────────────── */
+
+.page p {
+  margin: 0 0 11px 0;
+  orphans: 2;
+  widows: 2;
+}
+
+/* ─── 清單 ─────────────────────────────────── */
+
+.page ul,
+.page ol {
+  margin: 0 0 11px 0;
+  padding-left: 22px;
+}
+
+.page li {
+  margin-bottom: 5px;
+  line-height: 1.85;
+}
+
+.page li > ul,
+.page li > ol {
+  margin: 3px 0 5px 0;
+}
+
+.page ul {
+  list-style-type: disc;
+}
+
+.page ol {
+  list-style-type: decimal;
+}
+
+/* ─── 引用 ─────────────────────────────────── */
+
+.page blockquote {
+  margin: 14px 0;
+  padding: 10px 16px;
+  border-left: 3px solid #c8b89a;
+  background: #f0ebe1;
+  color: #5c4a38;
+  font-style: italic;
+}
+
+.page blockquote p {
+  margin: 0;
+}
+
+/* ─── 表格 ─────────────────────────────────── */
+
+.page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 12.5px;
+}
+
+.page th {
+  background: #2c2420;
+  color: #f7f3ec;
+  font-weight: bold;
+  font-style: normal;
+  text-align: left;
+  padding: 7px 12px;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+
+.page td {
+  color: #2c2420;
+  padding: 6px 12px;
+  border-bottom: 1px solid #ddd5c5;
+  vertical-align: top;
+}
+
+.page tr:nth-child(even) td {
+  background: #f0ebe1;
+}
+
+.page tr:last-child td {
+  border-bottom: 1px solid #c8b89a;
+}
+
+/* ─── 分隔線 ─────────────────────────────────── */
+
+.page hr {
+  border: none;
+  border-top: 1px solid #c8b89a;
+  margin: 24px 0;
+}
+
+/* ─── 圖片 ─────────────────────────────────── */
+
+.page img {
+  max-width: 100%;
+  display: block;
+  margin: 14px auto;
+}
+
+/* ─── Layout Block（兩欄並排） ─────────────── */
+
+.page [data-type="layout-block"] {
+  width: 100%;
+  box-sizing: border-box;
+  gap: 24px;
+  /* 禁止加 height: 100% */
+}
+
+.page [data-type="column-slot"] {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page [data-key="layout-two-col"],
+.page [data-key="layout-text-image"],
+.page [data-key="layout-image-text"] {
+  align-items: start;
+}
+
+/* ─── 複合區塊 ─────────────────────────────── */
+
+.page .block-highlight,
+.page .block-definition,
+.page .block-example,
+.page .block-note,
+.page .block-summary {
+  margin: 14px 0;
+  padding: 12px 16px;
+  box-sizing: border-box;
+}
+
+/* 重點框
+   暖棕底色，深色文字，有書本批注感 */
+.page .block-highlight {
+  background: #a07850;
+  color: #f7f3ec;
+  border-left: none;
+}
+
+.page .block-highlight .block-label {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #f0ebe1;
+  margin-bottom: 6px;
+  display: block;
+  opacity: 0.8;
+}
+
+.page .block-highlight p {
+  color: #f7f3ec;
+  margin: 0;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+/* 定義框
+   米白底 + 暖棕左線，溫潤不生硬 */
+.page .block-definition {
+  background: #ede8df;
+  border-left: 4px solid #a07850;
+}
+
+.page .block-definition .block-label {
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+  color: #a07850;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.page .block-definition p {
+  margin: 0;
+  color: #2c2420;
+  font-size: 12.5px;
+}
+
+/* 例題框
+   輔助色左線，透明底，比 Slate 更輕柔 */
+.page .block-example {
+  border-left: 2.5px solid #c8b89a;
+  padding-left: 16px;
+  padding-right: 0;
+  background: transparent;
+}
+
+.page .block-example .block-label {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a07850;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.page .block-example ol {
+  margin: 0;
+  padding-left: 18px;
+  color: #2c2420;
+}
+
+.page .block-example ol li {
+  margin-bottom: 5px;
+  font-size: 12.5px;
+}
+
+/* 補充說明
+   米色底，無邊框，比 Slate 的虛線更融入頁面 */
+.page .block-note {
+  background: #ede8df;
+  border: none;
+  padding: 10px 14px;
+}
+
+.page .block-note p {
+  margin: 0;
+  color: #5c4a38;
+  font-size: 12px;
+  font-style: italic;
+}
+
+/* 摘要條列
+   暖棕頂線，與 h1 底線呼應 */
+.page .block-summary {
+  border-top: 1px solid #c8b89a;
+  padding: 12px 0 0 0;
+  background: transparent;
+}
+
+.page .block-summary .block-label {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a07850;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.page .block-summary ol {
+  margin: 0;
+  padding-left: 18px;
+  color: #2c2420;
+}
+
+.page .block-summary ol li {
+  margin-bottom: 5px;
+  font-size: 12.5px;
+  line-height: 1.8;
+}
+
+/* ─── 列印設定（必填） ─────────────────────── */
+
+@media print {
+  .page {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

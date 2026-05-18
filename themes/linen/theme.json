@@ -1,0 +1,61 @@
+{
+  "name": "Linen",
+  "version": "1.0.0",
+  "author": "",
+  "description": "人文研討講義，暖米白質感，適合人文社科課程與工作坊。",
+  "pageSize": "A4",
+  "tags": ["講義", "人文", "Serif"],
+  "palette": ["#2c2420", "#a07850", "#c8b89a", "#ddd5c5", "#f7f3ec"],
+  "preview": "preview.png",
+  "blocks": [
+    {
+      "name": "重點框",
+      "key": "highlight",
+      "icon": "⭐",
+      "class": "block-highlight",
+      "children": [
+        { "type": "label", "placeholder": "重點" },
+        { "type": "paragraph", "placeholder": "說明文字…" }
+      ]
+    },
+    {
+      "name": "定義",
+      "key": "definition",
+      "icon": "📖",
+      "class": "block-definition",
+      "children": [
+        { "type": "label", "placeholder": "術語" },
+        { "type": "paragraph", "placeholder": "定義說明…" }
+      ]
+    },
+    {
+      "name": "例題",
+      "key": "example",
+      "icon": "✏️",
+      "class": "block-example",
+      "children": [
+        { "type": "label", "placeholder": "例題" },
+        { "type": "ol", "placeholder": "步驟…" }
+      ]
+    },
+    {
+      "name": "補充說明",
+      "key": "note",
+      "icon": "💡",
+      "class": "block-note",
+      "children": [
+        { "type": "paragraph", "placeholder": "補充說明…" }
+      ]
+    },
+    {
+      "name": "摘要",
+      "key": "summary",
+      "icon": "📋",
+      "class": "block-summary",
+      "children": [
+        { "type": "label", "placeholder": "摘要" },
+        { "type": "ol", "placeholder": "條列重點…" }
+      ]
+    }
+  ]
+}

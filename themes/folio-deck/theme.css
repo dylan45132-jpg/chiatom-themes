@@ -1,0 +1,238 @@
+/* Folio Deck — 現代專業簡報，低飽和藍灰
+   pageSize: 16:9 */
+
+/* ─── 基礎頁面 ─────────────────────────────── */
+
+.page {
+  font-family: 'Helvetica Neue', 'Noto Sans TC', 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1e2d42;
+  background: #f0f3f7;
+  padding: 64px 80px;
+  box-sizing: border-box;
+}
+
+/* ─── 標題層級 ─────────────────────────────── */
+
+.page h1 {
+  font-family: 'Helvetica Neue', 'Noto Sans TC', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #1e2d42;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
+}
+
+.page h2 {
+  font-family: 'Helvetica Neue', 'Noto Sans TC', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1e2d42;
+  margin: 0 0 12px 0;
+  letter-spacing: -0.01em;
+}
+
+.page h3 {
+  font-family: 'Helvetica Neue', 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #3d6080;
+  margin: 0 0 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ─── 段落 ─────────────────────────────────── */
+
+.page p {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+}
+
+/* ─── 清單 ─────────────────────────────────── */
+
+.page ul,
+.page ol {
+  margin: 0 0 12px 0;
+  padding-left: 24px;
+}
+
+.page li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.page li > ul,
+.page li > ol {
+  margin: 4px 0 6px 0;
+  font-size: 14px;
+}
+
+.page ul { list-style-type: disc; }
+.page ol { list-style-type: decimal; }
+
+/* ─── 引用 ─────────────────────────────────── */
+
+.page blockquote {
+  margin: 16px 0;
+  padding: 4px 0 4px 20px;
+  border-left: 4px solid #7aa0bc;
+  color: #3d6080;
+  font-size: 18px;
+}
+
+.page blockquote p { margin: 0; }
+
+/* ─── 表格 ─────────────────────────────────── */
+
+.page table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 15px;
+}
+
+.page th {
+  background: #1e2d42;
+  color: #f0f3f7;
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+}
+
+.page td {
+  color: #1e2d42;
+  padding: 9px 16px;
+  border-bottom: 1px solid #c8d6e5;
+  vertical-align: top;
+}
+
+.page tr:nth-child(even) td { background: #e5ecf4; }
+.page tr:last-child td { border-bottom: 1px solid #7aa0bc; }
+
+/* ─── 分隔線 ─────────────────────────────────── */
+
+.page hr {
+  border: none;
+  border-top: 1px solid #c8d6e5;
+  margin: 24px 0;
+}
+
+/* ─── 圖片 ─────────────────────────────────── */
+
+.page img {
+  max-width: 100%;
+  display: block;
+  margin: 16px auto;
+}
+
+/* ─── Layout Block ─────────────────────────── */
+
+.page [data-type="layout-block"] {
+  width: 100%;
+  box-sizing: border-box;
+  gap: 40px;
+}
+
+.page [data-type="column-slot"] {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page [data-key="layout-two-col"],
+.page [data-key="layout-text-image"],
+.page [data-key="layout-image-text"] {
+  align-items: start;
+}
+
+/* ─── 複合區塊（版面型） ──────────────────── */
+
+/* 封面
+   深藍色塊佔左側 1/3，標題在右 */
+.page .block-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 400px;
+  padding: 0;
+  border-left: 8px solid #3d6080;
+  padding-left: 40px;
+}
+
+.page .block-cover h1 {
+  font-size: 40px;
+  line-height: 1.15;
+  margin: 0 0 16px 0;
+  letter-spacing: -0.02em;
+}
+
+.page .block-cover p {
+  font-size: 16px;
+  color: #3d6080;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* 標題＋內容 */
+.page .block-title-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.page .block-title-content .block-title-slot h2 {
+  font-size: 26px;
+  margin: 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #7aa0bc;
+}
+
+.page .block-title-content .block-content-slot { flex: 1; }
+
+/* 章節過場
+   深藍底色，白字，強烈對比 */
+.page .block-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 360px;
+  background: #1e2d42;
+  padding: 48px 56px;
+  margin: -64px -80px;
+  width: calc(100% + 160px);
+}
+
+.page .block-section h2 {
+  font-size: 32px;
+  margin: 0 0 12px 0;
+  color: #f0f3f7;
+  letter-spacing: -0.02em;
+}
+
+.page .block-section p {
+  font-size: 16px;
+  color: #7aa0bc;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* 全版內容 */
+.page .block-full { width: 100%; }
+
+/* ─── 列印設定（必填） ─────────────────────── */
+
+@media print {
+  .page {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
